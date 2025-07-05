@@ -1,0 +1,841 @@
+[
+  {
+    "id": "p-1",
+    "name": "Flower Pots",
+    "price": 200,
+    "discounted_price": 150,
+    "image": "flowerpots.jpg",
+    "status": "IN STOCK"
+  },
+  {
+    "id": "p-2",
+    "name": "Sparklers",
+    "price": 100,
+    "discounted_price": 80,
+    "image": "sparklers.jpg",
+    "status": "IN STOCK"
+  },
+  {
+    "id": 3,
+    "name": "34’’ Lakshmi Crackers",
+    "pack_type": "Pkt",
+    "price": 95,
+    "discounted_price": 19,
+    "category": "One_Sound"
+  },
+  {
+    "id": 4,
+    "name": "45’’ Elephant crackers",
+    "pack_type": "Pkt",
+    "price": 250,
+    "discounted_price": 50,
+    "category": "One_Sound"
+  },
+  {
+    "id": 5,
+    "name": "Stripped Bijili (50pcs)",
+    "pack_type": "Pkt",
+    "price": 170,
+    "discounted_price": 34,
+    "category": "One_Sound"
+  },
+  {
+    "id": 6,
+    "name": "King of King Bomb (3ply)",
+    "pack_type": "Box",
+    "price": 500,
+    "discounted_price": 100,
+    "category": "bombs"
+  },
+  {
+    "id": 7,
+    "name": "Classic King Bombs (5ply)",
+    "pack_type": "Box",
+    "price": 750,
+    "discounted_price": 150,
+    "category": "bombs"
+  },
+  {
+    "id": 8,
+    "name": "Paper bomb (1 1/4)",
+    "pack_type": "Pcs",
+    "price": 750,
+    "discounted_price": 150,
+    "category": "bombs"
+  },
+  {
+    "id": 9,
+    "name": "Paper bomb (1Kg)",
+    "pack_type": "Pcs",
+    "price": 3000,
+    "discounted_price": 600,
+    "category": "bombs"
+  },
+  {
+    "id": 10,
+    "name": "Money in the Bank",
+    "pack_type": "Box",
+    "price": 1080,
+    "discounted_price": 216,
+    "category": "bombs"
+  },
+  {
+    "id": 11,
+    "name": "Flower Pots Big",
+    "pack_type": "Box",
+    "price": 400,
+    "discounted_price": 80,
+    "category": "flower_pots"
+  },
+  {
+    "id": 12,
+    "name": "Flower Pots Special",
+    "pack_type": "Box",
+    "price": 450,
+    "discounted_price": 90,
+    "category": "flower_pots"
+  },
+  {
+    "id": 13,
+    "name": "Flower Pots Giant",
+    "pack_type": "Box",
+    "price": 600,
+    "discounted_price": 120,
+    "category": "flower_pots"
+  },
+  {
+    "id": 14,
+    "name": "Colour Koti Deluxe",
+    "pack_type": "Box",
+    "price": 1500,
+    "discounted_price": 300,
+    "category": "flower_pots"
+  },
+  {
+    "id": 15,
+    "name": "Colour Koti Giant",
+    "pack_type": "Box",
+    "price": 1100,
+    "discounted_price": 220,
+    "category": "flower_pots"
+  },
+  {
+    "id": 16,
+    "name": "Ganga Jamuna",
+    "pack_type": "Box",
+    "price": 400,
+    "discounted_price": 80,
+    "category": "flower_pots"
+  },
+  {
+    "id": 17,
+    "name": "WIRE CHAKARA",
+    "price": 800,
+    "discounted_price": 160,
+    "category": "ground_chakkars"
+  },
+  {
+    "id": 18,
+    "name": "Ground Chakkars Special",
+    "pack_type": "Box",
+    "price": 300,
+    "discounted_price": 60,
+    "category": "ground_chakkars"
+  },
+  {
+    "id": 19,
+    "name": "Ground Chakkars Special (Arun)",
+    "pack_type": "Box",
+    "price": 399,
+    "discounted_price": 80,
+    "category": "ground_chakkars"
+  },
+  {
+    "id": 20,
+    "name": "Ground Chakkars (Big)",
+    "pack_type": "Box",
+    "price": 270,
+    "discounted_price": 54,
+    "category": "ground_chakkars"
+  },
+  {
+    "id": 21,
+    "name": "Ground Chakkars (Deluxe)",
+    "pack_type": "Box",
+    "price": 650,
+    "discounted_price": 130,
+    "category": "ground_chakkars"
+  },
+  {
+    "id": 22,
+    "name": "Spinner Spinner Special",
+    "pack_type": "Box",
+    "price": 600,
+    "discounted_price": 120,
+    "category": "ground_chakkars"
+  },
+  {
+    "id": 23,
+    "name": "1 ¹⁄2’’ Twinkling Star",
+    "pack_type": "Box",
+    "price": 150,
+    "discounted_price": 30,
+    "category": "twinkling_star"
+  },
+  {
+    "id": 24,
+    "name": "4’’ Twinkling Star",
+    "pack_type": "Box",
+    "price": 350,
+    "discounted_price": 70,
+    "category": "twinkling_star"
+  },
+  {
+    "id": 25,
+    "name": "Sivakasi Coconut Crackling",
+    "pack_type": "Box",
+    "price": 950,
+    "discounted_price": 190,
+    "category": "twinkling_star"
+  },
+  {
+    "id": 26,
+    "name": "Tricolour",
+    "pack_type": "Box",
+    "price": 1450,
+    "discounted_price": 290,
+    "category": "kids_special"
+  },
+  {
+    "id": 27,
+    "name": "Helicopter",
+    "pack_type": "Box",
+    "price": 500,
+    "discounted_price": 100,
+    "category": "kids_special"
+  },
+  {
+    "id": 28,
+    "name": "Bus Fountain",
+    "pack_type": "Box",
+    "price": 1600,
+    "discounted_price": 320,
+    "category": "kids_special"
+  },
+  {
+    "id": 29,
+    "name": "EMU Egg",
+    "pack_type": "Box",
+    "price": 1300,
+    "discounted_price": 1040,
+    "category": "kids_special"
+  },
+  {
+    "id": 30,
+    "name": "Golden Duck",
+    "pack_type": "Box",
+    "price": 2500500,
+    "discounted_price": 2000400.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 31,
+    "name": "Tritent (Mercury)",
+    "pack_type": "Box",
+    "price": 1760352,
+    "discounted_price": 1408281.6,
+    "category": "kids_special"
+  },
+  {
+    "id": 32,
+    "name": "Max 100 Pistol",
+    "pack_type": "Box",
+    "price": 1700340,
+    "discounted_price": 1360272.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 33,
+    "name": "Train Fountain",
+    "pack_type": "Box",
+    "price": 1600320,
+    "discounted_price": 1280256.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 34,
+    "name": "Peacock Feather",
+    "pack_type": "Box",
+    "price": 1000200,
+    "discounted_price": 800160.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 35,
+    "name": "Bada Peacock",
+    "pack_type": "Box",
+    "price": 1750350,
+    "discounted_price": 1400280.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 36,
+    "name": "4*4 Wheel",
+    "pack_type": "Box",
+    "price": 1000200,
+    "discounted_price": 800160.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 37,
+    "name": "Electric stone",
+    "price": 10020,
+    "discounted_price": 8016.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 38,
+    "name": "Sil Slay Mini",
+    "price": 10020,
+    "discounted_price": 8016.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 39,
+    "name": "Magic Pop",
+    "price": 10020,
+    "discounted_price": 8016.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 40,
+    "name": "BAMPARAM",
+    "price": 1000200,
+    "discounted_price": 800160.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 41,
+    "name": "TALKING TOM",
+    "price": 1500300,
+    "discounted_price": 1200240.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 42,
+    "name": "Fun Max (Ajantha)",
+    "pack_type": "Pcs",
+    "price": 2000400,
+    "discounted_price": 1600320.0,
+    "category": "fancy_novelties"
+  },
+  {
+    "id": 43,
+    "name": "Wonder Three",
+    "pack_type": "Pcs",
+    "price": 1200240,
+    "discounted_price": 960192.0,
+    "category": "fancy_novelties"
+  },
+  {
+    "id": 44,
+    "name": "Tin",
+    "pack_type": "Pcs",
+    "price": 600120,
+    "discounted_price": 480096.0,
+    "category": "fancy_novelties"
+  },
+  {
+    "id": 45,
+    "name": "Chocolate",
+    "pack_type": "Box",
+    "price": 750150,
+    "discounted_price": 600120.0,
+    "category": "fancy_novelties"
+  },
+  {
+    "id": 46,
+    "name": "Disco Shower",
+    "pack_type": "Box",
+    "price": 600120,
+    "discounted_price": 480096.0,
+    "category": "fancy_novelties"
+  },
+  {
+    "id": 47,
+    "name": "Penta",
+    "pack_type": "Box",
+    "price": 1000200,
+    "discounted_price": 800160.0,
+    "category": "fancy_novelties"
+  },
+  {
+    "id": 48,
+    "name": "Peacock Feather",
+    "pack_type": "Box",
+    "price": 600120,
+    "discounted_price": 480096.0,
+    "category": "fancy_novelties"
+  },
+  {
+    "id": 49,
+    "name": "100 Florals",
+    "pack_type": "Pcs",
+    "price": 41082,
+    "discounted_price": 32865.6,
+    "category": "garlands"
+  },
+  {
+    "id": 50,
+    "name": "200 Florals",
+    "pack_type": "Pcs",
+    "price": 800160,
+    "discounted_price": 640128.0,
+    "category": "garlands"
+  },
+  {
+    "id": 51,
+    "name": "1K",
+    "pack_type": "Pcs",
+    "price": 1500300,
+    "discounted_price": 1200240.0,
+    "category": "garlands"
+  },
+  {
+    "id": 52,
+    "name": "2K",
+    "pack_type": "Pcs",
+    "price": 2700540,
+    "discounted_price": 2160432.0,
+    "category": "garlands"
+  },
+  {
+    "id": 53,
+    "name": "5K",
+    "pack_type": "Pcs",
+    "price": 75001500,
+    "discounted_price": 60001200.0,
+    "category": "garlands"
+  },
+  {
+    "id": 54,
+    "name": "10K",
+    "pack_type": "Pcs",
+    "price": 150003000,
+    "discounted_price": 120002400.0,
+    "category": "garlands"
+  },
+  {
+    "id": 55,
+    "name": "28 Chorsa",
+    "pack_type": "Pcs",
+    "price": 9018,
+    "discounted_price": 7214.4,
+    "category": "chorsa"
+  },
+  {
+    "id": 56,
+    "name": "24 Giant",
+    "pack_type": "Pcs",
+    "price": 42084,
+    "discounted_price": 33667.2,
+    "category": "chorsa"
+  },
+  {
+    "id": 57,
+    "name": "48 Giant",
+    "pack_type": "Pcs",
+    "price": 840168,
+    "discounted_price": 672134.4,
+    "category": "chorsa"
+  },
+  {
+    "id": 58,
+    "name": "Photo Flash",
+    "pack_type": "Box",
+    "price": 500100,
+    "discounted_price": 400080.0,
+    "category": "fancy_novelties"
+  },
+  {
+    "id": 59,
+    "name": "Icon Shower",
+    "pack_type": "Pcs",
+    "price": 2000400,
+    "discounted_price": 1600320.0,
+    "category": "fancy_novelties"
+  },
+  {
+    "id": 60,
+    "name": "Nemo 5 in 1",
+    "pack_type": "Box",
+    "price": 1200240,
+    "discounted_price": 960192.0,
+    "category": "fancy_novelties"
+  },
+  {
+    "id": 61,
+    "name": "Silslay",
+    "pack_type": "Box",
+    "price": 20040,
+    "discounted_price": 16032.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 62,
+    "name": "Pop Silver",
+    "pack_type": "Box",
+    "price": 500100,
+    "discounted_price": 400080.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 63,
+    "name": "Mini Siren",
+    "pack_type": "Box",
+    "price": 1200240,
+    "discounted_price": 960192.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 64,
+    "name": "Sword",
+    "pack_type": "Pcs",
+    "price": 1500300,
+    "discounted_price": 1200240.0,
+    "category": "kids_special"
+  },
+  {
+    "id": 65,
+    "name": "Bomb Rocket",
+    "pack_type": "Box",
+    "price": 500100,
+    "discounted_price": 400080.0,
+    "category": "rockets"
+  },
+  {
+    "id": 66,
+    "name": "Lunik Rocket",
+    "pack_type": "Box",
+    "price": 1000200,
+    "discounted_price": 800160.0,
+    "category": "rockets"
+  },
+  {
+    "id": 67,
+    "name": "12 Shot",
+    "pack_type": "Pcs",
+    "price": 1000200,
+    "discounted_price": 800160.0,
+    "category": "multishot_fountains"
+  },
+  {
+    "id": 68,
+    "name": "25 Rider",
+    "pack_type": "Pcs",
+    "price": 1250250,
+    "discounted_price": 1000200.0,
+    "category": "multishot_fountains"
+  },
+  {
+    "id": 69,
+    "name": "50 Rider",
+    "pack_type": "Pcs",
+    "price": 2500500,
+    "discounted_price": 2000400.0,
+    "category": "multishot_fountains"
+  },
+  {
+    "id": 70,
+    "name": "30 Shot",
+    "pack_type": "Pcs",
+    "price": 2488497,
+    "discounted_price": 1990797.6,
+    "category": "multishot_fountains"
+  },
+  {
+    "id": 71,
+    "name": "60 Shot",
+    "pack_type": "Pcs",
+    "price": 4712942,
+    "discounted_price": 3770353.6,
+    "category": "multishot_fountains"
+  },
+  {
+    "id": 72,
+    "name": "120 Shot",
+    "pack_type": "Pcs",
+    "price": 93601872,
+    "discounted_price": 74881497.6,
+    "category": "multishot_fountains"
+  },
+  {
+    "id": 73,
+    "name": "240 Shot",
+    "pack_type": "Pcs",
+    "price": 233604672,
+    "discounted_price": 186883737.6,
+    "category": "multishot_fountains"
+  },
+  {
+    "id": 74,
+    "name": "30 Shot",
+    "pack_type": "Pcs",
+    "price": 1800360,
+    "discounted_price": 1440288.0,
+    "category": "multishot_fountains"
+  },
+  {
+    "id": 75,
+    "name": "60 Shot",
+    "pack_type": "Pcs",
+    "price": 3600720,
+    "discounted_price": 2880576.0,
+    "category": "multishot_fountains"
+  },
+  {
+    "id": 76,
+    "name": "120 Shot",
+    "pack_type": "Pcs",
+    "price": 72001440,
+    "discounted_price": 57601152.0,
+    "category": "multishot_fountains"
+  },
+  {
+    "id": 77,
+    "name": "240 Shot",
+    "pack_type": "Pcs",
+    "price": 144002880,
+    "discounted_price": 115202304.0,
+    "category": "multishot_fountains"
+  },
+  {
+    "id": 78,
+    "name": "1¹⁄4’’ Chotta Fancy",
+    "pack_type": "Pcs",
+    "price": 25050,
+    "discounted_price": 20040.0,
+    "category": "fancy_pipes"
+  },
+  {
+    "id": 79,
+    "name": "2’’ Fancy Pipe (4 Varients)",
+    "pack_type": "Pcs",
+    "price": 500100,
+    "discounted_price": 400080.0,
+    "category": "fancy_pipes"
+  },
+  {
+    "id": 80,
+    "name": "2’’ Fancy Pipe (3 Pcs.)",
+    "pack_type": "Pcs",
+    "price": 1300260,
+    "discounted_price": 1040208.0,
+    "category": "fancy_pipes"
+  },
+  {
+    "id": 81,
+    "name": "3¹⁄2’’ Fancy Pipe (7 Varients)",
+    "pack_type": "Pcs",
+    "price": 1500300,
+    "discounted_price": 1200240.0,
+    "category": "fancy_pipes"
+  },
+  {
+    "id": 82,
+    "name": "3¹⁄2’’ Fancy Pipe DOUBLE BALL",
+    "price": 3300660,
+    "discounted_price": 2640528.0,
+    "category": "fancy_pipes"
+  },
+  {
+    "id": 83,
+    "name": "4’’ Fancy Pipe (2 Varients)",
+    "pack_type": "Pcs",
+    "price": 3500700,
+    "discounted_price": 2800560.0,
+    "category": "fancy_pipes"
+  },
+  {
+    "id": 84,
+    "name": "5’’ Fancy Display Series Double Ball 1 Pcs.",
+    "price": 54001080,
+    "discounted_price": 4320864.0,
+    "category": "fancy_pipes"
+  },
+  {
+    "id": 85,
+    "name": "5’’ Fancy Display Series Double Ball 3 Pcs.",
+    "price": 60001200,
+    "status": "NO STOCK",
+    "discounted_price": 4800960.0,
+    "category": "fancy_pipes"
+  },
+  {
+    "id": 86,
+    "name": "MATCH BOX 10 BOX ( MULTI COLOUR)",
+    "price": 1000200,
+    "discounted_price": 800160.0,
+    "category": "miscellaneous"
+  },
+  {
+    "id": 87,
+    "name": "10cm Electric Sparklers",
+    "pack_type": "Box",
+    "price": 11523,
+    "discounted_price": 9218.4,
+    "category": "sparklers"
+  },
+  {
+    "id": 88,
+    "name": "10cm Green Sparklers",
+    "pack_type": "Box",
+    "price": 11523,
+    "discounted_price": 9218.4,
+    "category": "sparklers"
+  },
+  {
+    "id": 89,
+    "name": "10cm Red Sparklers",
+    "pack_type": "Box",
+    "price": 15030,
+    "discounted_price": 12024.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 90,
+    "name": "12cm Electric Sparklers",
+    "pack_type": "Box",
+    "price": 19038,
+    "discounted_price": 15230.4,
+    "category": "sparklers"
+  },
+  {
+    "id": 91,
+    "name": "12cm Colored Sparklers",
+    "pack_type": "Box",
+    "price": 20040,
+    "discounted_price": 16032.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 92,
+    "name": "15cm Electric Sparklers",
+    "pack_type": "Box",
+    "price": 25050,
+    "discounted_price": 20040.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 93,
+    "name": "15cm Coloured Sparklers",
+    "pack_type": "Box",
+    "price": 25050,
+    "discounted_price": 20040.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 94,
+    "name": "15cm Green Sparklers",
+    "pack_type": "Box",
+    "price": 25050,
+    "discounted_price": 20040.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 95,
+    "name": "15cm Red Sparklers",
+    "pack_type": "Box",
+    "price": 25050,
+    "discounted_price": 20040.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 96,
+    "name": "30cm Coloured Sparklers",
+    "pack_type": "Box",
+    "price": 30060,
+    "discounted_price": 24048.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 97,
+    "name": "30cm Green Sparklers",
+    "pack_type": "Box",
+    "price": 30060,
+    "discounted_price": 24048.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 98,
+    "name": "30cm Red Sparklers",
+    "pack_type": "Box",
+    "price": 30060,
+    "discounted_price": 24048.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 99,
+    "name": "50cm Electronic Sparklers",
+    "pack_type": "Box",
+    "price": 1000200,
+    "discounted_price": 800160.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 100,
+    "name": "50cm Mix Sparklers",
+    "pack_type": "Box",
+    "price": 1000200,
+    "discounted_price": 800160.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 101,
+    "name": "75cm Electric Sparklers",
+    "pack_type": "Box",
+    "price": 1000200,
+    "discounted_price": 800160.0,
+    "category": "sparklers"
+  },
+  {
+    "id": 102,
+    "name": "20 items",
+    "pack_type": "Box",
+    "price": 350350,
+    "discounted_price": 280280.0,
+    "category": "assorted_boxes"
+  },
+  {
+    "id": 103,
+    "name": "30 items",
+    "pack_type": "Box",
+    "price": 420420,
+    "discounted_price": 336336.0,
+    "category": "assorted_boxes"
+  },
+  {
+    "id": 104,
+    "name": "35 items",
+    "pack_type": "Box",
+    "price": 600600,
+    "discounted_price": 480480.0,
+    "category": "assorted_boxes"
+  },
+  {
+    "id": 105,
+    "name": "40 items",
+    "pack_type": "Box",
+    "price": 750750,
+    "discounted_price": 600600.0,
+    "category": "assorted_boxes"
+  },
+  {
+    "id": 106,
+    "name": "50 items",
+    "pack_type": "Box",
+    "price": 900900,
+    "discounted_price": 720720.0,
+    "category": "assorted_boxes"
+  }
+]
