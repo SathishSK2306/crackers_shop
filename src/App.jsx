@@ -4,6 +4,7 @@ import CrackersTable from "./components/CrackersTable";
 import ContactForm from "./components/ContactForm";
 import OrderForm from "./components/OrderForm";
 import WhatsAppSticky from "./components/WhatsAppSticky";
+import BackgroundFireworks from "./components/BackgroundFireworks";
 import crackersData from "./data/crackers.json";
 
 const App = () => {
@@ -37,12 +38,55 @@ const App = () => {
   };
 
   return (
-    <div className="p-4 font-sans scroll-smooth">
-      <h1 className="text-4xl font-bold text-center text-[#0A1931] mb-10">
-        Prithivik Crackers
-      </h1>
+    <div className="font-sans scroll-smooth">
+      <div className="relative w-full h-[300px] overflow-hidden flex items-center justify-center bg-[#1e2f3f]">
+        <BackgroundFireworks />
 
-      <div className="flex justify-end my-4">
+        <motion.h1
+          className="relative z-10 text-center text-white font-extrabold px-4"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            visible: {
+              transition: {
+                staggerChildren: 0.07,
+              },
+            },
+          }}
+        >
+          {"PRITHIVIK CRACKERS".split("").map((char, index) => (
+            <motion.span
+              key={index}
+              className="inline-block text-[8vw] sm:text-[5vw] md:text-5xl"
+              variants={{
+                hidden: { opacity: 0, y: -40, scale: 0.5 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  scale: 1,
+                  transition: {
+                    type: "spring",
+                    stiffness: 500,
+                    damping: 20,
+                  },
+                },
+              }}
+            >
+              {char === " " ? (
+                <>
+                  <span className="block sm:hidden w-full h-0"></span>
+                  &nbsp;
+                </>
+              ) : (
+                char
+              )}
+            </motion.span>
+          ))}
+        </motion.h1>
+      </div>
+
+      {/* 💸 Price List Button */}
+      <div className="flex justify-end my-4 px-4">
         <button
           type="button"
           className="bg-[#DCEAF5] text-[#1A3D63] font-semibold px-5 py-3 rounded shadow hover:bg-[#c9dfef] transition-all duration-300"
@@ -51,7 +95,8 @@ const App = () => {
         </button>
       </div>
 
-      <div className="mb-10">
+      {/* 🧨 Crackers Table */}
+      <div className="px-4 mb-10">
         <CrackersTable
           data={crackersData}
           cart={cart}
@@ -60,9 +105,10 @@ const App = () => {
         />
       </div>
 
+      {/* 🧾 Order Summary */}
       {cart.length > 0 && (
         <motion.div
-          className="mb-10 p-6 bg-[#EDF4FA] rounded-lg shadow-lg"
+          className="mb-10 p-6 bg-[#EDF4FA] rounded-lg shadow-lg mx-4"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
         >
@@ -86,7 +132,8 @@ const App = () => {
         </motion.div>
       )}
 
-      <div className="mb-10">
+      {/* 📝 Order Form */}
+      <div className="mb-10 px-4">
         <OrderForm
           onSubmit={handleFormSubmit}
           cart={cart}
@@ -96,10 +143,12 @@ const App = () => {
         />
       </div>
 
-      <div className="mb-10">
+      {/* 📞 Contact Form */}
+      <div className="mb-10 px-4">
         <ContactForm />
       </div>
 
+      {/* 📱 WhatsApp Sticky */}
       <WhatsAppSticky />
     </div>
   );

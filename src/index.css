@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Ovo", serif;
+  background-color: #253743;
+}
+canvas {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}

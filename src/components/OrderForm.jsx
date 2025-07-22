@@ -141,7 +141,7 @@ const OrderForm = ({ onSubmit, cart, total, discount, final }) => {
               onClick={downloadPDF}
               className="w-full bg-green-700 text-white py-3 rounded hover:bg-green-800"
             >
-              Download PDF
+              Download Estimate
             </button>
           </div>
         </form>

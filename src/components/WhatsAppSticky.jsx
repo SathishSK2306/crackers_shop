@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const WhatsAppSticky = () => (
   <motion.a
-    href="https://wa.me/916379153730"
+    href="https://wa.me/917604648644"
     target="_blank"
     rel="noopener noreferrer"
     className="fixed bottom-4 right-4 z-50"
