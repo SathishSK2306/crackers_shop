@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        ovo: ["Ovo", "serif"],
+        ovo: ["Ovo", "Poppins", "serif"],
       },
     },
   },

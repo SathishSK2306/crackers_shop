@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 body {
   font-family: "Ovo", serif;
   background-color: #253743;
@@ -10,4 +10,9 @@ canvas {
   position: absolute;
   z-index: 0;
   pointer-events: none;
+}
+@layer utilities {
+  .title-shadow {
+    text-shadow: 3px 3px 0 #999, 6px 6px 0 #777, 9px 9px 0 #555;
+  }
 }

@@ -1,122 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 
 const ContactForm = () => {
-  const [result, setResult] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    contact: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const webFormData = new FormData();
-    webFormData.append("access_key", "3f94046d-12be-4a04-be46-43b7dc19570b");
-    webFormData.append("name", formData.name);
-    webFormData.append("email", formData.email);
-    webFormData.append("contact", formData.contact);
-    webFormData.append("message", formData.message);
-
-    setResult("Sending...");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: webFormData,
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("✅ Your message was sent successfully!");
-      setSubmitted(true);
-      setFormData({
-        name: "",
-        email: "",
-        contact: "",
-        message: "",
-      });
-
-      setTimeout(() => {
-        setSubmitted(false);
-        setResult("");
-      }, 3000);
-    } else {
-      setResult("❌ Something went wrong. Please try again.");
-    }
-  };
-
   return (
     <div className="bg-[#1A3D63] text-white py-12 px-4 sm:px-8 md:px-16 lg:px-32 min-h-screen flex items-center justify-center">
-      <div className="w-full max-w-3xl mx-auto bg-white text-gray-900 rounded-2xl shadow-lg p-8 flex flex-col md:flex-row gap-8 relative">
-        {/* ✅ Success Message */}
-        {result && (
-          <div
-            className={`absolute top-4 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded shadow z-20 text-center w-fit ${
-              submitted
-                ? "bg-green-100 border border-green-400 text-green-700"
-                : "bg-yellow-100 border border-yellow-400 text-yellow-700"
-            }`}
-          >
-            {result}
-          </div>
-        )}
-
-        {/* ✅ Form Section */}
-        <div className="flex-1 flex flex-col justify-center">
+      <div className="w-full max-w-5xl mx-auto bg-white text-gray-900 rounded-2xl shadow-lg p-8 flex flex-col md:flex-row gap-8 relative">
+        {/* 🗺️ Google Map Section */}
+        <div className="flex-1">
           <h2 className="text-3xl font-bold text-center mb-6 text-[#1A3D63]">
-            Contact Us
+            Our Location
           </h2>
-          <form className="grid gap-5" onSubmit={handleSubmit}>
-            <input
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[#1A3D63]"
-              placeholder="Name"
-              required
-            />
-            <input
-              name="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[#1A3D63]"
-              placeholder="Email"
-              required
-            />
-            <input
-              name="contact"
-              value={formData.contact}
-              onChange={handleChange}
-              className="border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[#1A3D63]"
-              placeholder="Contact"
-              required
-            />
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              className="border border-gray-300 rounded-md p-3 h-32 focus:outline-none focus:ring-2 focus:ring-[#1A3D63]"
-              placeholder="Message"
-              required
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-[#1A3D63] hover:bg-[#154067] text-white font-semibold py-3 px-6 rounded-md transition duration-300"
-            >
-              Submit
-            </button>
-          </form>
+          <div className="w-full h-96 rounded-xl overflow-hidden shadow-md border border-gray-300">
+            <iframe
+              title="Prithivik Crackers Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233.858773729539!2d77.79156041240681!3d9.376034537297508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06c9aaafadc54d%3A0x4500c10f796eec5e!2s9QGR%2BCJ8%2C%20Vijayakarisalkulam%20-%20Thayilpatti%20Rd%2C%20Tamil%20Nadu%20626128!5e1!3m2!1sen!2sin!4v1753259340647!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
 
-        {/* ✅ Contact Info Section */}
+        {/* 🧾 Contact Info Section */}
         <div className="flex-1 flex flex-col justify-center items-center bg-[#f5f7fa] rounded-xl p-6 shadow-inner text-center">
           <h3 className="text-xl font-semibold text-[#1A3D63] mb-2">
             PRITHIVIK CRACKERS
@@ -129,19 +36,19 @@ const ContactForm = () => {
           <p className="mb-1">
             WhatsApp:{" "}
             <a
-              href="tel:7604648644"
+              href="tel:7904648644"
               className="text-blue-600 hover:underline font-semibold"
             >
-              7604648644
+              7904648644
             </a>
           </p>
           <p>
             Email:{" "}
             <a
-              href="mailto:prithivikcrackers@hotmail.com"
+              href="mailto:prithivikcrackers@gmail.com"
               className="text-blue-600 hover:underline font-semibold"
             >
-              prithivikcrackers@hotmail.com
+              prithivikcrackers@gmail.com
             </a>
           </p>
         </div>
