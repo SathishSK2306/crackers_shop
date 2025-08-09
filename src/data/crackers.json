@@ -1,974 +1,1026 @@
 [
   {
-    "id": 1,
-    "name": "Flower Pots",
-    "category": "flower_pots",
-    "price": 200,
-    "discounted_price": 150,
-    "image": "/assets/crackers/flower_pots.jpg",
-    "description": "Colorful ground-based sparklers that bloom like flowers",
-    "status": "IN STOCK"
-  },
-  {
-    "id": 2,
-    "name": "Sparklers",
-    "category": "sparklers",
-    "price": 100,
-    "discounted_price": 80,
-    "image": "/assets/crackers/sparklers.jpg",
-    "description": "Handheld sparkling fireworks for celebrations",
-    "status": "IN STOCK"
-  },
-  {
-    "id": 3,
-    "name": "34'' Lakshmi Crackers",
-    "category": "sound",
-    "price": 95,
-    "discounted_price": 19,
-    "image": "/assets/crackers/lakshmi.jpg",
-    "description": "Traditional single sound crackers with 34'' length",
-    "pack_type": "Pkt"
-  },
-  {
-    "id": 4,
-    "name": "45'' Elephant Crackers",
-    "category": "sound",
-    "price": 250,
-    "discounted_price": 50,
-    "image": "/assets/crackers/elephant.jpg",
-    "description": "Extra long 45'' crackers with loud sound",
-    "pack_type": "Pkt"
-  },
-  {
-    "id": 5,
-    "name": "Stripped Bijili (50pcs)",
-    "category": "sound",
-    "price": 170,
-    "discounted_price": 34,
-    "image": "/assets/crackers/bijili.jpg",
-    "description": "Bundle of 50 stripped electric spark crackers",
-    "pack_type": "Pkt"
-  },
-  {
-    "id": 6,
-    "name": "King of King Bomb (3ply)",
-    "category": "bombs",
-    "price": 500,
-    "discounted_price": 100,
-    "image": "/assets/crackers/king_bomb.jpg",
-    "description": "Premium 3-ply bursting bomb with loud sound",
-    "pack_type": "Box"
-  },
-  {
-    "id": 7,
-    "name": "Classic King Bombs (5ply)",
-    "category": "bombs",
-    "price": 750,
-    "discounted_price": 150,
-    "image": "/assets/crackers/classic_king.jpg",
-    "description": "Extra loud 5-ply bursting bombs",
-    "pack_type": "Box"
-  },
-  {
-    "id": 8,
-    "name": "Paper Bomb (1 1/4)",
-    "category": "bombs",
-    "price": 750,
-    "discounted_price": 150,
-    "image": "/assets/crackers/paper_bomb.jpg",
-    "description": "Compact paper-wrapped bombs",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 9,
-    "name": "Paper Bomb (1Kg)",
-    "category": "bombs",
-    "price": 3000,
-    "discounted_price": 600,
-    "image": "/assets/crackers/paper_bomb_1kg.jpg",
-    "description": "1kg package of paper bombs",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 10,
-    "name": "Money in the Bank",
-    "category": "bombs",
-    "price": 1080,
-    "discounted_price": 216,
-    "image": "/assets/crackers/money_bank.jpg",
-    "description": "Special effect bomb with money-like explosion",
-    "pack_type": "Box"
-  },
-  {
-    "id": 11,
-    "name": "Flower Pots Big",
-    "category": "flower_pots",
-    "price": 400,
-    "discounted_price": 80,
-    "image": "/assets/crackers/flower_pots_big.jpg",
-    "description": "Larger version of flower pot fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 12,
-    "name": "Flower Pots Special",
-    "category": "flower_pots",
-    "price": 450,
-    "discounted_price": 90,
-    "image": "/assets/crackers/flower_pots_special.jpg",
-    "description": "Special edition flower pots with enhanced effects",
-    "pack_type": "Box"
-  },
-  {
-    "id": 13,
-    "name": "Flower Pots Giant",
-    "category": "flower_pots",
-    "price": 600,
-    "discounted_price": 120,
-    "image": "/assets/crackers/flower_pots_giant.jpg",
-    "description": "Extra large flower pot fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 14,
-    "name": "Colour Koti Deluxe",
-    "category": "flower_pots",
-    "price": 1500,
-    "discounted_price": 300,
-    "image": "/assets/crackers/color_koti_deluxe.jpg",
-    "description": "Deluxe version of color fountain fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 15,
-    "name": "Colour Koti Giant",
-    "category": "flower_pots",
-    "price": 1100,
-    "discounted_price": 220,
-    "image": "/assets/crackers/color_koti_giant.jpg",
-    "description": "Giant color fountain with extended duration",
-    "pack_type": "Box"
-  },
-  {
-    "id": 16,
-    "name": "Ganga Jamuna",
-    "category": "flower_pots",
-    "price": 400,
-    "discounted_price": 80,
-    "image": "/assets/crackers/ganga_jamuna.jpg",
-    "description": "Special two-color fountain firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 17,
-    "name": "Wire Chakara",
-    "category": "ground_chakkars",
-    "price": 800,
-    "discounted_price": 160,
-    "image": "/assets/crackers/wire_chakara.jpg",
-    "description": "Spinning ground firework with wire frame"
-  },
-  {
-    "id": 18,
-    "name": "Ground Chakkars Special",
-    "category": "ground_chakkars",
-    "price": 300,
-    "discounted_price": 60,
-    "image": "/assets/crackers/ground_chakkar_special.jpg",
-    "description": "Special edition spinning ground fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 19,
-    "name": "Ground Chakkars Special (Arun)",
-    "category": "ground_chakkars",
-    "price": 399,
-    "discounted_price": 80,
-    "image": "/assets/crackers/ground_chakkar_arun.jpg",
-    "description": "Arun brand special ground spinners",
-    "pack_type": "Box"
-  },
-  {
-    "id": 20,
-    "name": "Ground Chakkars (Big)",
-    "category": "ground_chakkars",
-    "price": 270,
-    "discounted_price": 54,
-    "image": "/assets/crackers/ground_chakkar_big.jpg",
-    "description": "Larger version of ground spinners",
-    "pack_type": "Box"
-  },
-  {
-    "id": 21,
-    "name": "Ground Chakkars (Deluxe)",
-    "category": "ground_chakkars",
-    "price": 650,
-    "discounted_price": 130,
-    "image": "/assets/crackers/ground_chakkar_deluxe.jpg",
-    "description": "Deluxe version with enhanced effects",
-    "pack_type": "Box"
-  },
-  {
-    "id": 22,
-    "name": "Spinner Spinner Special",
-    "category": "ground_chakkars",
-    "price": 600,
-    "discounted_price": 120,
-    "image": "/assets/crackers/spinner_special.jpg",
-    "description": "Special spinning ground firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 23,
-    "name": "1½'' Twinkling Star",
-    "category": "twinkling_star",
-    "price": 150,
-    "discounted_price": 30,
-    "image": "/assets/crackers/twinkling_star_small.jpg",
-    "description": "Small twinkling star fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 24,
-    "name": "4'' Twinkling Star",
-    "category": "twinkling_star",
-    "price": 350,
-    "discounted_price": 70,
-    "image": "/assets/crackers/twinkling_star_4inch.jpg",
-    "description": "4-inch twinkling star fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 25,
-    "name": "Sivakasi Coconut Crackling",
-    "category": "twinkling_star",
-    "price": 950,
-    "discounted_price": 190,
-    "image": "/assets/crackers/coconut_crackling.jpg",
-    "description": "Special coconut-shaped crackling fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 26,
-    "name": "Tricolour",
-    "category": "kids_special",
-    "price": 1450,
-    "discounted_price": 290,
-    "image": "/assets/crackers/tricolor.jpg",
-    "description": "Three-color special effect fireworks for kids",
-    "pack_type": "Box"
-  },
-  {
-    "id": 27,
-    "name": "Helicopter",
-    "category": "kids_special",
-    "price": 500,
-    "discounted_price": 100,
-    "image": "/assets/crackers/helicopter.jpg",
-    "description": "Helicopter-shaped flying fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 28,
-    "name": "Bus Fountain",
-    "category": "kids_special",
-    "price": 1600,
-    "discounted_price": 320,
-    "image": "/assets/crackers/bus_fountain.jpg",
-    "description": "Bus-shaped fountain firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 29,
-    "name": "EMU Egg",
-    "category": "kids_special",
-    "price": 1300,
-    "discounted_price": 1040,
-    "image": "/assets/crackers/emu_egg.jpg",
-    "description": "Egg-shaped special effect firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 30,
-    "name": "Golden Duck",
-    "category": "kids_special",
-    "price": 2500,
-    "discounted_price": 2000,
-    "image": "/assets/crackers/golden_duck.jpg",
-    "description": "Golden duck-shaped special firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 31,
-    "name": "Tritent (Mercury)",
-    "category": "kids_special",
-    "price": 1760,
-    "discounted_price": 1408,
-    "image": "/assets/crackers/tritent_mercury.jpg",
-    "description": "Trident-shaped mercury effect firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 32,
-    "name": "Max 100 Pistol",
-    "category": "kids_special",
-    "price": 1700,
-    "discounted_price": 1360,
-    "image": "/assets/crackers/max_pistol.jpg",
-    "description": "Pistol-shaped cracker with 100 shots",
-    "pack_type": "Box"
-  },
-  {
-    "id": 33,
-    "name": "Train Fountain",
-    "category": "kids_special",
-    "price": 1600,
-    "discounted_price": 1280,
-    "image": "/assets/crackers/train_fountain.jpg",
-    "description": "Train-shaped fountain firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 34,
-    "name": "Peacock Feather",
-    "category": "kids_special",
-    "price": 1000,
-    "discounted_price": 800,
-    "image": "/assets/crackers/peacock_feather.jpg",
-    "description": "Peacock feather effect firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 35,
-    "name": "Bada Peacock",
-    "category": "kids_special",
-    "price": 1750,
-    "discounted_price": 1400,
-    "image": "/assets/crackers/bada_peacock.jpg",
-    "description": "Large peacock effect firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 36,
-    "name": "4x4 Wheel",
-    "category": "kids_special",
-    "price": 1000,
-    "discounted_price": 800,
-    "image": "/assets/crackers/4x4_wheel.jpg",
-    "description": "4x4 wheel-shaped spinning firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 37,
-    "name": "Electric Stone",
-    "category": "kids_special",
-    "price": 100,
-    "discounted_price": 80,
-    "image": "/assets/crackers/electric_stone.jpg",
-    "description": "Electric sparking stone effect"
-  },
-  {
-    "id": 38,
-    "name": "Sil Slay Mini",
-    "category": "kids_special",
-    "price": 100,
-    "discounted_price": 80,
-    "image": "/assets/crackers/sil_slay_mini.jpg",
-    "description": "Mini version of sil slay fireworks"
-  },
-  {
-    "id": 39,
-    "name": "Magic Pop",
-    "category": "kids_special",
-    "price": 100,
-    "discounted_price": 80,
-    "image": "/assets/crackers/magic_pop.jpg",
-    "description": "Magic popping fireworks for kids"
-  },
-  {
-    "id": 40,
-    "name": "BAMPARAM",
-    "category": "kids_special",
-    "price": 1000,
-    "discounted_price": 800,
-    "image": "/assets/crackers/bamparam.jpg",
-    "description": "Special bamparam effect fireworks"
-  },
-  {
-    "id": 41,
-    "name": "TALKING TOM",
-    "category": "kids_special",
-    "price": 1500,
-    "discounted_price": 1200,
-    "image": "/assets/crackers/talking_tom.jpg",
-    "description": "Talking Tom character effect fireworks"
-  },
-  {
-    "id": 42,
-    "name": "Fun Max (Ajantha)",
-    "category": "fancy_novelties",
-    "price": 2000,
-    "discounted_price": 1600,
-    "image": "/assets/crackers/fun_max.jpg",
-    "description": "Ajantha brand fun max fireworks",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 43,
-    "name": "Wonder Three",
-    "category": "fancy_novelties",
-    "price": 1200,
-    "discounted_price": 960,
-    "image": "/assets/crackers/wonder_three.jpg",
-    "description": "Three-effect wonder fireworks",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 44,
-    "name": "Tin",
-    "category": "fancy_novelties",
-    "price": 600,
-    "discounted_price": 480,
-    "image": "/assets/crackers/tin.jpg",
-    "description": "Tin-shaped novelty firework",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 45,
-    "name": "Chocolate",
-    "category": "fancy_novelties",
-    "price": 750,
-    "discounted_price": 600,
-    "image": "/assets/crackers/chocolate.jpg",
-    "description": "Chocolate-shaped novelty firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 46,
-    "name": "Disco Shower",
-    "category": "fancy_novelties",
-    "price": 600,
-    "discounted_price": 480,
-    "image": "/assets/crackers/disco_shower.jpg",
-    "description": "Disco light shower effect firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 47,
-    "name": "Penta",
-    "category": "fancy_novelties",
-    "price": 1000,
-    "discounted_price": 800,
-    "image": "/assets/crackers/penta.jpg",
-    "description": "Five-effect combination firework",
-    "pack_type": "Box"
-  },
-  {
-    "id": 48,
-    "name": "Peacock Feather",
-    "category": "fancy_novelties",
-    "price": 600,
-    "discounted_price": 480,
-    "image": "/assets/crackers/peacock_feather_novelty.jpg",
-    "description": "Novelty peacock feather effect",
-    "pack_type": "Box"
-  },
-  {
-    "id": 49,
-    "name": "100 Florals",
-    "category": "garlands",
-    "price": 410,
-    "discounted_price": 328,
-    "image": "/assets/crackers/100_florals.jpg",
-    "description": "100 flower garland crackers",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 50,
-    "name": "200 Florals",
-    "category": "garlands",
-    "price": 800,
-    "discounted_price": 640,
-    "image": "/assets/crackers/200_florals.jpg",
-    "description": "200 flower garland crackers",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 51,
-    "name": "1K",
-    "category": "garlands",
-    "price": 1500,
-    "discounted_price": 1200,
-    "image": "/assets/crackers/1k_garland.jpg",
-    "description": "1000-count garland crackers",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 52,
-    "name": "2K",
-    "category": "garlands",
-    "price": 2700,
-    "discounted_price": 2160,
-    "image": "/assets/crackers/2k_garland.jpg",
-    "description": "2000-count garland crackers",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 53,
-    "name": "5K",
-    "category": "garlands",
-    "price": 7500,
-    "discounted_price": 6000,
-    "image": "/assets/crackers/5k_garland.jpg",
-    "description": "5000-count garland crackers",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 54,
-    "name": "10K",
-    "category": "garlands",
-    "price": 15000,
-    "discounted_price": 12000,
-    "image": "/assets/crackers/10k_garland.jpg",
-    "description": "10000-count garland crackers",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 55,
-    "name": "28 Chorsa",
-    "category": "chorsa",
-    "price": 90,
-    "discounted_price": 72,
-    "image": "/assets/crackers/28_chorsa.jpg",
-    "description": "28-count chorsa crackers",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 56,
-    "name": "24 Giant",
-    "category": "chorsa",
-    "price": 420,
-    "discounted_price": 336,
-    "image": "/assets/crackers/24_giant.jpg",
-    "description": "24-count giant chorsa crackers",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 57,
-    "name": "48 Giant",
-    "category": "chorsa",
-    "price": 840,
-    "discounted_price": 672,
-    "image": "/assets/crackers/48_giant.jpg",
-    "description": "48-count giant chorsa crackers",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 58,
-    "name": "Photo Flash",
-    "category": "fancy_novelties",
-    "price": 500,
-    "discounted_price": 400,
-    "image": "/assets/crackers/photo_flash.jpg",
-    "description": "Photo flash effect fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 59,
-    "name": "Icon Shower",
-    "category": "fancy_novelties",
-    "price": 2000,
-    "discounted_price": 1600,
-    "image": "/assets/crackers/icon_shower.jpg",
-    "description": "Icon-shaped shower effect fireworks",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 60,
-    "name": "Nemo 5 in 1",
-    "category": "fancy_novelties",
-    "price": 1200,
-    "discounted_price": 960,
-    "image": "/assets/crackers/nemo_5in1.jpg",
-    "description": "5-in-1 Nemo themed fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 61,
-    "name": "Silslay",
-    "category": "kids_special",
-    "price": 200,
-    "discounted_price": 160,
-    "image": "/assets/crackers/silslay.jpg",
-    "description": "Silslay brand kids fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 62,
-    "name": "Pop Silver",
-    "category": "kids_special",
-    "price": 500,
-    "discounted_price": 400,
-    "image": "/assets/crackers/pop_silver.jpg",
-    "description": "Silver popping fireworks for kids",
-    "pack_type": "Box"
-  },
-  {
-    "id": 63,
-    "name": "Mini Siren",
-    "category": "kids_special",
-    "price": 1200,
-    "discounted_price": 960,
-    "image": "/assets/crackers/mini_siren.jpg",
-    "description": "Mini siren sound effect fireworks",
-    "pack_type": "Box"
-  },
-  {
-    "id": 64,
-    "name": "Sword",
-    "category": "kids_special",
-    "price": 1500,
-    "discounted_price": 1200,
-    "image": "/assets/crackers/sword.jpg",
-    "description": "Sword-shaped sparklers for kids",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 65,
-    "name": "Bomb Rocket",
-    "category": "rockets",
-    "price": 500,
-    "discounted_price": 400,
-    "image": "/assets/crackers/bomb_rocket.jpg",
-    "description": "Rocket with bomb effect",
-    "pack_type": "Box"
-  },
-  {
-    "id": 66,
-    "name": "Lunik Rocket",
-    "category": "rockets",
-    "price": 1000,
-    "discounted_price": 800,
-    "image": "/assets/crackers/lunik_rocket.jpg",
-    "description": "Lunik brand flying rockets",
-    "pack_type": "Box"
-  },
-  {
-    "id": 67,
-    "name": "12 Shot",
-    "category": "multishot_fountains",
-    "price": 1000,
-    "discounted_price": 800,
-    "image": "/assets/crackers/12_shot.jpg",
-    "description": "12-shot multi-effect fountain",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 68,
-    "name": "25 Rider",
-    "category": "multishot_fountains",
-    "price": 1250,
-    "discounted_price": 1000,
-    "image": "/assets/crackers/25_rider.jpg",
-    "description": "25-shot rider effect fountain",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 69,
-    "name": "50 Rider",
-    "category": "multishot_fountains",
-    "price": 2500,
-    "discounted_price": 2000,
-    "image": "/assets/crackers/50_rider.jpg",
-    "description": "50-shot rider effect fountain",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 70,
-    "name": "30 Shot",
-    "category": "multishot_fountains",
-    "price": 2488,
-    "discounted_price": 1990,
-    "image": "/assets/crackers/30_shot.jpg",
-    "description": "30-shot multi-effect fountain",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 71,
-    "name": "60 Shot",
-    "category": "multishot_fountains",
-    "price": 4712,
-    "discounted_price": 3770,
-    "image": "/assets/crackers/60_shot.jpg",
-    "description": "60-shot multi-effect fountain",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 72,
-    "name": "120 Shot",
-    "category": "multishot_fountains",
-    "price": 93601,
-    "discounted_price": 74881,
-    "image": "/assets/crackers/120_shot.jpg",
-    "description": "120-shot mega fountain",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 73,
-    "name": "240 Shot",
-    "category": "multishot_fountains",
-    "price": 233604,
-    "discounted_price": 186883,
-    "image": "/assets/crackers/240_shot.jpg",
-    "description": "240-shot grand fountain",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 74,
-    "name": "30 Shot (Alt)",
-    "category": "multishot_fountains",
-    "price": 1800,
-    "discounted_price": 1440,
-    "image": "/assets/crackers/30_shot_alt.jpg",
-    "description": "Alternative 30-shot fountain",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 75,
-    "name": "60 Shot (Alt)",
-    "category": "multishot_fountains",
-    "price": 3600,
-    "discounted_price": 2880,
-    "image": "/assets/crackers/60_shot_alt.jpg",
-    "description": "Alternative 60-shot fountain",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 76,
-    "name": "120 Shot (Alt)",
-    "category": "multishot_fountains",
-    "price": 7200,
-    "discounted_price": 5760,
-    "image": "/assets/crackers/120_shot_alt.jpg",
-    "description": "Alternative 120-shot fountain",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 77,
-    "name": "240 Shot (Alt)",
-    "category": "multishot_fountains",
-    "price": 14400,
-    "discounted_price": 11520,
-    "image": "/assets/crackers/240_shot_alt.jpg",
-    "description": "Alternative 240-shot fountain",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 78,
-    "name": "1¼'' Chotta Fancy",
-    "category": "fancy_pipes",
-    "price": 250,
-    "discounted_price": 200,
-    "image": "/assets/crackers/chotta_fancy.jpg",
-    "description": "Small fancy pipe fireworks",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 79,
-    "name": "2'' Fancy Pipe (4 Variants)",
-    "category": "fancy_pipes",
-    "price": 500,
-    "discounted_price": 400,
-    "image": "/assets/crackers/2inch_fancy.jpg",
-    "description": "2-inch fancy pipes in 4 variants",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 80,
-    "name": "2'' Fancy Pipe (3 Pcs)",
-    "category": "fancy_pipes",
-    "price": 1300,
-    "discounted_price": 1040,
-    "image": "/assets/crackers/2inch_fancy_3pcs.jpg",
-    "description": "3-piece set of 2-inch fancy pipes",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 81,
-    "name": "3½'' Fancy Pipe (7 Variants)",
-    "category": "fancy_pipes",
-    "price": 1500,
-    "discounted_price": 1200,
-    "image": "/assets/crackers/3.5inch_fancy.jpg",
-    "description": "3.5-inch fancy pipes in 7 variants",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 82,
-    "name": "3½'' Fancy Pipe DOUBLE BALL",
-    "category": "fancy_pipes",
-    "price": 3300,
-    "discounted_price": 2640,
-    "image": "/assets/crackers/double_ball.jpg",
-    "description": "Double ball fancy pipe fireworks"
-  },
-  {
-    "id": 83,
-    "name": "4'' Fancy Pipe (2 Variants)",
-    "category": "fancy_pipes",
-    "price": 3500,
-    "discounted_price": 2800,
-    "image": "/assets/crackers/4inch_fancy.jpg",
-    "description": "4-inch fancy pipes in 2 variants",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 84,
-    "name": "5'' Fancy Display Series Double Ball 1 Pc",
-    "category": "fancy_pipes",
-    "price": 5400,
-    "discounted_price": 4320,
-    "image": "/assets/crackers/5inch_double_ball.jpg",
-    "description": "5-inch double ball display firework"
-  },
-  {
-    "id": 85,
-    "name": "5'' Fancy Display Series Double Ball 3 Pcs",
-    "category": "fancy_pipes",
-    "price": 6000,
-    "discounted_price": 4800,
-    "image": "/assets/crackers/5inch_double_ball_3pcs.jpg",
-    "description": "3-piece set of 5-inch double balls",
-    "status": "NO STOCK",
-    "pack_type": "Pcs"
-  },
-  {
-    "id": 86,
-    "name": "Match Box 10 Box (Multi Color)",
-    "category": "miscellaneous",
-    "price": 1000,
-    "discounted_price": 800,
-    "image": "/assets/crackers/match_box.jpg",
-    "description": "10-box set of multi-color match crackers"
-  },
-  {
-    "id": 87,
-    "name": "10cm Electric Sparklers",
-    "category": "sparklers",
-    "price": 115,
-    "discounted_price": 92,
-    "image": "/assets/crackers/10cm_electric.jpg",
-    "description": "10cm electric sparklers",
-    "pack_type": "Box"
-  },
-  {
-    "id": 88,
-    "name": "10cm Green Sparklers",
-    "category": "sparklers",
-    "price": 115,
-    "discounted_price": 92,
-    "image": "/assets/crackers/10cm_green.jpg",
-    "description": "10cm green colored sparklers",
-    "pack_type": "Box"
-  },
-  {
-    "id": 89,
-    "name": "10cm Red Sparklers",
-    "category": "sparklers",
-    "price": 150,
-    "discounted_price": 120,
-    "image": "/assets/crackers/10cm_red.jpg",
-    "description": "10cm red colored sparklers",
-    "pack_type": "Box"
-  },
-  {
-    "id": 90,
-    "name": "12cm Electric Sparklers",
-    "category": "sparklers",
-    "price": 190,
-    "discounted_price": 152,
-    "image": "/assets/crackers/12cm_electric.jpg",
-    "description": "12cm electric sparklers",
-    "pack_type": "Box"
-  },
-  {
-    "id": 91,
-    "name": "12cm Colored Sparklers",
-    "category": "sparklers",
-    "price": 200,
-    "discounted_price": 160,
-    "image": "/assets/crackers/12cm_colored.jpg",
-    "description": "12cm multi-colored sparklers",
-    "pack_type": "Box"
-  },
-  {
-    "id": 92,
-    "name": "15cm Electric Sparklers",
-    "category": "sparklers",
-    "price": 250,
-    "discounted_price": 200,
-    "image": "/assets/crackers/15cm_electric.jpg",
-    "description": "15cm electric sparklers",
-    "pack_type": "Box"
-  },
-  {
-    "id": 93,
-    "name": "15cm Colored Sparklers",
-    "category": "sparklers",
-    "price": 250,
-    "discounted_price": 200,
-    "image": "/assets/crackers/15cm_colored.jpg",
-    "description": "15cm multi-colored sparklers",
-    "pack_type": "Box"
-  },
-  {
-    "id": 94,
-    "name": "15cm Green Sparklers",
-    "category": "sparklers",
-    "price": 250,
-    "discounted_price": 200,
-    "image": "/assets/crackers/15cm_green.jpg",
-    "description": "15cm green colored sparklers",
-    "pack_type": "Box"
-  },
-  {
-    "id": 95,
-    "name": "15cm Red Sparklers",
-    "category": "sparklers",
-    "price": 250,
-    "discounted_price": 200,
-    "image": "/assets/crackers/15cm_red.jpg",
-    "description": "15cm red colored sparklers",
-    "pack_type": "Box"
-  },
-  {
-    "id": 96,
-    "name": "30cm Colored Sparklers",
-    "category": "sparklers",
-    "price": 300,
-    "discounted_price": 240,
-    "image": "/assets/crackers/30cm_colored.jpg",
-    "description": "30cm multi-colored sparklers",
-    "pack_type": "Box"
-  },
-  {
-    "id": 97,
-    "name": "30cm Green Sparklers",
-    "category": "sparklers",
-    "price": 300,
-    "discounted_price": 240,
-    "image": "/assets/crackers/30cm_green.jpg",
-    "description": "30cm green colored sparklers",
-    "pack_type": "Box"
-  },
-  {
-    "id": 98,
-    "name": "30cm Red Sparklers",
-    "category": "sparklers",
-    "price": 300,
-    "discounted_price": 240,
-    "image": "/assets/crackers/30cm_green.jpg",
-    "description": "30cm green colored sparklers",
-    "pack_type": "Box"
+    "s_no": 1,
+    "product": "3 1/2 Lakshmi/Chotta/Flash",
+    "category": "Sound Crackers",
+    "actual_price": 79,
+    "offer_price": 14,
+    "quantity": "1 Pkt - 5 Pieces"
+  },
+  {
+    "s_no": 2,
+    "product": "2 3/4\" Kuruvi",
+    "category": "Sound Crackers",
+    "actual_price": 143,
+    "offer_price": 8,
+    "quantity": "1 Pkt - 5 Pieces"
+  },
+  {
+    "s_no": 3,
+    "product": "4\" Lakshmi/Ant-Man/Dora",
+    "category": "Sound Crackers",
+    "actual_price": 409,
+    "offer_price": 20,
+    "quantity": "1 Pkt - 5 Pieces"
+  },
+  {
+    "s_no": 4,
+    "product": "4\" Deluxe Lakshmi/Dead Pool",
+    "category": "Sound Crackers",
+    "actual_price": 125,
+    "offer_price": 25,
+    "quantity": "1 Pkt - 5 Pieces"
+  },
+  {
+    "s_no": 5,
+    "product": "5\" Gold Ben 10 Deluxe",
+    "category": "Sound Crackers",
+    "actual_price": 260,
+    "offer_price": 50,
+    "quantity": "1 Pkt - 5 Pieces"
+  },
+  {
+    "s_no": 6,
+    "product": "6\" Thanos / Shiva",
+    "category": "Sound Crackers",
+    "actual_price": 275,
+    "offer_price": 55,
+    "quantity": "1 Pkt - 5 Pieces"
+  },
+  {
+    "s_no": 7,
+    "product": "Lucky Money / Money Bank (3 Pcs)",
+    "category": "Sound Crackers",
+    "actual_price": 4060,
+    "offer_price": 212,
+    "quantity": "1 Box - 3 Pieces"
+  },
+  {
+    "s_no": 8,
+    "product": "Black Money / Mankatha (5 Pcs)",
+    "category": "Sound Crackers",
+    "actual_price": 4350,
+    "offer_price": 270,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 9,
+    "product": "2 Sound Crackers",
+    "category": "Sound Crackers",
+    "actual_price": 245,
+    "offer_price": 49,
+    "quantity": "1 Pkt - 5 Piece"
+  },
+  {
+    "s_no": 10,
+    "product": "Paper Bomb 1/4 Kg",
+    "category": "Sound Crackers",
+    "actual_price": 295,
+    "offer_price": 57,
+    "quantity": "1 Box- 1 Piece"
+  },
+  {
+    "s_no": 11,
+    "product": "Paper Bomb 1/2 Kg",
+    "category": "Sound Crackers",
+    "actual_price": 665,
+    "offer_price": 113,
+    "quantity": "1 Box- 1 Piece"
+  },
+  {
+    "s_no": 12,
+    "product": "Paper Bomb 1Kg",
+    "category": "Sound Crackers",
+    "actual_price": 1125,
+    "offer_price": 225,
+    "quantity": "1 Box- 1 Piece"
+  },
+  {
+    "s_no": 13,
+    "product": "Ground Chakkar Big (10 Pcs)",
+    "category": "Chakkars",
+    "actual_price": 475,
+    "offer_price": 35,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 14,
+    "product": "Ground Chakkar Big (25 Pcs)",
+    "category": "Chakkars",
+    "actual_price": 425,
+    "offer_price": 85,
+    "quantity": "1 Box - 25 Pieces"
+  },
+  {
+    "s_no": 15,
+    "product": "Ground Chakkar Asoka",
+    "category": "Chakkars",
+    "actual_price": 296,
+    "offer_price": 59,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 16,
+    "product": "Ground Chakkar Special",
+    "category": "Chakkars",
+    "actual_price": 395,
+    "offer_price": 79,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 17,
+    "product": "Ground Chakkar Deluxe",
+    "category": "Chakkars",
+    "actual_price": 695,
+    "offer_price": 139,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 18,
+    "product": "Ground Chakkar Orbit Spinner",
+    "category": "Chakkars",
+    "actual_price": 795,
+    "offer_price": 159,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 19,
+    "product": "Flower Pots Small",
+    "category": "Flower Pot",
+    "actual_price": 295,
+    "offer_price": 59,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 20,
+    "product": "Flower Pots Big",
+    "category": "Flower Pot",
+    "actual_price": 360,
+    "offer_price": 72,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 21,
+    "product": "Flower Pots Special",
+    "category": "Flower Pot",
+    "actual_price": 450,
+    "offer_price": 90,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 22,
+    "product": "Flower Pots Asoka",
+    "category": "Flower Pot",
+    "actual_price": 640,
+    "offer_price": 122,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 23,
+    "product": "Colour Koti",
+    "category": "Flower Pot",
+    "actual_price": 4060,
+    "offer_price": 212,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 24,
+    "product": "Flower Pots Deluxe (5 Pcs)",
+    "category": "Flower Pot",
+    "actual_price": 945,
+    "offer_price": 189,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 25,
+    "product": "Oola Vedi / Old is Gold (25 Pcs)",
+    "category": "Booms & Bijjili",
+    "actual_price": 4095,
+    "offer_price": 219,
+    "quantity": "1 Box - 25 Pieces"
+  },
+  {
+    "s_no": 26,
+    "product": "Bullet Bomb",
+    "category": "Booms & Bijjili",
+    "actual_price": 445,
+    "offer_price": 29,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 27,
+    "product": "Mega Bullet Bomb",
+    "category": "Booms & Bijjili",
+    "actual_price": 245,
+    "offer_price": 49,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 28,
+    "product": "Red Bijjili Bag (100 Pcs)",
+    "category": "Booms & Bijjili",
+    "actual_price": 480,
+    "offer_price": 36,
+    "quantity": "1 PK - 100 Pieces"
+  },
+  {
+    "s_no": 29,
+    "product": "Stripped Bijjili Bag / Gold (100 Pcs)",
+    "category": "Booms & Bijjili",
+    "actual_price": 205,
+    "offer_price": 41,
+    "quantity": "1 PK - 100 Pieces"
+  },
+  {
+    "s_no": 30,
+    "product": "Hydro Bomb",
+    "category": "Booms & Bijjili",
+    "actual_price": 475,
+    "offer_price": 95,
+    "quantity": "1 Box - 10 Piece"
+  },
+  {
+    "s_no": 31,
+    "product": "King Bomb",
+    "category": "Booms & Bijjili",
+    "actual_price": 700,
+    "offer_price": 140,
+    "quantity": "1 Box - 10 Piece"
+  },
+  {
+    "s_no": 32,
+    "product": "Mega Flash (Classic Bomb)",
+    "category": "Booms & Bijjili",
+    "actual_price": 900,
+    "offer_price": 180,
+    "quantity": "1 Box - 10 Piece"
+  },
+  {
+    "s_no": 33,
+    "product": "10 Cm Electric Sparkler",
+    "category": "Sparkler",
+    "actual_price": 400,
+    "offer_price": 20,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 34,
+    "product": "10 Cm Crackling Sparkler",
+    "category": "Sparkler",
+    "actual_price": 405,
+    "offer_price": 21,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 35,
+    "product": "10 Cm Green Sparkler",
+    "category": "Sparkler",
+    "actual_price": 410,
+    "offer_price": 22,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 36,
+    "product": "10 Cm Red Sparkler",
+    "category": "Sparkler",
+    "actual_price": 405,
+    "offer_price": 21,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 37,
+    "product": "12 Cm Electric Sparkler",
+    "category": "Sparkler",
+    "actual_price": 435,
+    "offer_price": 27,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 38,
+    "product": "12 Cm Crackling Sparkler",
+    "category": "Sparkler",
+    "actual_price": 440,
+    "offer_price": 28,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 39,
+    "product": "12 Cm Green Sparkler",
+    "category": "Sparkler",
+    "actual_price": 445,
+    "offer_price": 29,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 40,
+    "product": "12 Cm Red Sparkler",
+    "category": "Sparkler",
+    "actual_price": 450,
+    "offer_price": 30,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 41,
+    "product": "15 Cm Electric Sparkler",
+    "category": "Sparkler",
+    "actual_price": 220,
+    "offer_price": 44,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 42,
+    "product": "15 Cm Crackling Sparkler",
+    "category": "Sparkler",
+    "actual_price": 230,
+    "offer_price": 46,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 43,
+    "product": "15 Cm Green Sparkler",
+    "category": "Sparkler",
+    "actual_price": 240,
+    "offer_price": 48,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 44,
+    "product": "15 Cm Red Sparkler",
+    "category": "Sparkler",
+    "actual_price": 260,
+    "offer_price": 50,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 45,
+    "product": "30 Cm Electric Sparkler (5 Pcs)",
+    "category": "Sparkler",
+    "actual_price": 220,
+    "offer_price": 44,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 46,
+    "product": "30 Cm Crackling Sparkler (5 Pcs)",
+    "category": "Sparkler",
+    "actual_price": 230,
+    "offer_price": 46,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 47,
+    "product": "30 Cm Green Sparkler (5 Pcs)",
+    "category": "Sparkler",
+    "actual_price": 240,
+    "offer_price": 48,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 48,
+    "product": "30 Cm Red Sparkler (5 Pcs)",
+    "category": "Sparkler",
+    "actual_price": 250,
+    "offer_price": 50,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 49,
+    "product": "50 Cm Electric Sparkler (5 Pcs)",
+    "category": "Sparkler",
+    "actual_price": 805,
+    "offer_price": 179,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 50,
+    "product": "Rotating Sparkler (1 Pcs)",
+    "category": "Sparkler",
+    "actual_price": 1475,
+    "offer_price": 295,
+    "quantity": "1 Tube - 1 Pieces"
+  },
+  {
+    "s_no": 51,
+    "product": "Lollypop (5 Pcs)",
+    "category": "Sparkler",
+    "actual_price": 945,
+    "offer_price": 189,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 52,
+    "product": "Water Falls Pencil (5 Pcs)",
+    "category": "Sattai & Pencil",
+    "actual_price": 4205,
+    "offer_price": 241,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 53,
+    "product": "Popcorn Pencil (5 Pcs)",
+    "category": "Sattai & Pencil",
+    "actual_price": 4205,
+    "offer_price": 241,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 54,
+    "product": "Kids Star Wars / Star Falls Pencil",
+    "category": "Sattai & Pencil",
+    "actual_price": 4095,
+    "offer_price": 219,
+    "quantity": "1 Box - 2 Pieces"
+  },
+  {
+    "s_no": 55,
+    "product": "1 1/2\" Twinkling Star",
+    "category": "Sattai & Pencil",
+    "actual_price": 450,
+    "offer_price": 30,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 56,
+    "product": "4\" Twinkling Star",
+    "category": "Sattai & Pencil",
+    "actual_price": 445,
+    "offer_price": 89,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 57,
+    "product": "Mantra Stick (Crackling Stick)",
+    "category": "Sattai & Pencil",
+    "actual_price": 205,
+    "offer_price": 59,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 58,
+    "product": "Jagajai (30 Pcs)",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 2495,
+    "offer_price": 439,
+    "quantity": "1 Box - 30 Pieces"
+  },
+  {
+    "s_no": 59,
+    "product": "Kunfu (Children 1000 Wala)",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 295,
+    "offer_price": 59,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 60,
+    "product": "Alert Lar",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 799,
+    "offer_price": 158,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 61,
+    "product": "1000-2000 Lar",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 2925,
+    "offer_price": 405,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 62,
+    "product": "Magic Whip (Color Sound Garland - Wala)",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 899,
+    "offer_price": 178,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 63,
+    "product": "I Am Lar (Children 2000 Wala)",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 595,
+    "offer_price": 119,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 64,
+    "product": "Elakkiya (3000 Wala Timing Colour)",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 2699,
+    "offer_price": 520,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 65,
+    "product": "Yalini (5000 Wala Timing Garland)",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 2745,
+    "offer_price": 549,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 66,
+    "product": "Dharsha (10000 Wala Garland)",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 4995,
+    "offer_price": 999,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 67,
+    "product": "Mini Magic Whip (Colour Garland Mini)",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 495,
+    "offer_price": 99,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 68,
+    "product": "1000 Wala",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 950,
+    "offer_price": 190,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 69,
+    "product": "2000 Wala",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 4999,
+    "offer_price": 380,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 70,
+    "product": "5000 Wala",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 4759,
+    "offer_price": 950,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 71,
+    "product": "10000 Wala",
+    "category": "Digital LAR (Wala)",
+    "actual_price": 9599,
+    "offer_price": 1900,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 72,
+    "product": "Baby Rocket",
+    "category": "Rocket & Unique",
+    "actual_price": 489,
+    "offer_price": 36,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 73,
+    "product": "Rocket Bomb",
+    "category": "Rocket & Unique",
+    "actual_price": 399,
+    "offer_price": 78,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 74,
+    "product": "Colour Rocket",
+    "category": "Rocket & Unique",
+    "actual_price": 375,
+    "offer_price": 75,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 75,
+    "product": "Lunik Rocket",
+    "category": "Rocket & Unique",
+    "actual_price": 625,
+    "offer_price": 125,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 76,
+    "product": "Pop Corn Kit Kat Color",
+    "category": "Kids Item",
+    "actual_price": 495,
+    "offer_price": 39,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 77,
+    "product": "Stone",
+    "category": "Kids Item",
+    "actual_price": 295,
+    "offer_price": 41,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 78,
+    "product": "Match Box 5 In 1",
+    "category": "Kids Item",
+    "actual_price": 999,
+    "offer_price": 180,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 79,
+    "product": "Magical Peacock (5 Hole) / Red & Green Cracking / Gold Peacock",
+    "category": "Night Series",
+    "actual_price": 4245,
+    "offer_price": 249,
+    "quantity": "1 Box - 1 Piece - 5 Hole"
+  },
+  {
+    "s_no": 80,
+    "product": "Badaa Peacock (5 Hole)",
+    "category": "Night Series",
+    "actual_price": 4995,
+    "offer_price": 399,
+    "quantity": "1 Box - 1 Piece - 5 Hole"
+  },
+  {
+    "s_no": 81,
+    "product": "6\" Aqua Queen / Water Queen / Touch Me Fall",
+    "category": "Night Series",
+    "actual_price": 4295,
+    "offer_price": 241,
+    "quantity": "1 Piece - Touch and Enjoy"
+  },
+  {
+    "s_no": 82,
+    "product": "6\" Monster Th67 Fountain",
+    "category": "Night Series",
+    "actual_price": 4295,
+    "offer_price": 241,
+    "quantity": "1 Piece"
+  },
+  {
+    "s_no": 83,
+    "product": "6\" Rolex 100 (Rx100) Fountain",
+    "category": "Night Series",
+    "actual_price": 4295,
+    "offer_price": 241,
+    "quantity": "1 Piece"
+  },
+  {
+    "s_no": 84,
+    "product": "The Leader (3 Pcs) Fountain",
+    "category": "Night Series",
+    "actual_price": 4295,
+    "offer_price": 241,
+    "quantity": "1 Box - 3 Pieces"
+  },
+  {
+    "s_no": 85,
+    "product": "Jigarthanda (3 Pcs) Fountain",
+    "category": "Night Series",
+    "actual_price": 4479,
+    "offer_price": 234,
+    "quantity": "1 Box - 3 Pieces"
+  },
+  {
+    "s_no": 86,
+    "product": "Thunder Coconut Crackling Fountain (3 Pcs)",
+    "category": "Night Series",
+    "actual_price": 4959,
+    "offer_price": 390,
+    "quantity": "1 Box - 3 Pieces"
+  },
+  {
+    "s_no": 87,
+    "product": "Fire & Feather Fountain (5 Pcs)",
+    "category": "Night Series",
+    "actual_price": 649,
+    "offer_price": 122,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 88,
+    "product": "Nebula Fountain (5 Pcs)",
+    "category": "Night Series",
+    "actual_price": 640,
+    "offer_price": 122,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 89,
+    "product": "Golden Sparrow Fountain (5 Pcs)",
+    "category": "Night Series",
+    "actual_price": 585,
+    "offer_price": 117,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 90,
+    "product": "Dragon Slay Multi Function Fountain (5 Pcs)",
+    "category": "Night Series",
+    "actual_price": 879,
+    "offer_price": 174,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 91,
+    "product": "12 Shot Color & Tails",
+    "category": "Night Series",
+    "actual_price": 4959,
+    "offer_price": 210,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 92,
+    "product": "Night Aerials (3Pcs)",
+    "category": "Night Series",
+    "actual_price": 4760,
+    "offer_price": 350,
+    "quantity": "1 Box - 3 Pieces"
+  },
+  {
+    "s_no": 93,
+    "product": "2 1/2\" Pipe",
+    "category": "Night Series",
+    "actual_price": 800,
+    "offer_price": 160,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 94,
+    "product": "3 1/2\" Pipe",
+    "category": "Night Series",
+    "actual_price": 4700,
+    "offer_price": 358,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 95,
+    "product": "Super Singer / Siren (5 Pcs)",
+    "category": "Night Series",
+    "actual_price": 45,
+    "offer_price": 189,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 96,
+    "product": "2\" Pipe - Fancy",
+    "category": "Night Series",
+    "actual_price": 700,
+    "offer_price": 140,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 97,
+    "product": "4\" Pipe - Economic",
+    "category": "Night Series",
+    "actual_price": 2400,
+    "offer_price": 480,
+    "quantity": "1 Box - 1 Pieces"
+  },
+  {
+    "s_no": 98,
+    "product": "Sharp Shooter / Big Gun (2 Pcs)",
+    "category": "Night Series",
+    "actual_price": 1050,
+    "offer_price": 210,
+    "quantity": "1 Box - 2 Pieces"
+  },
+  {
+    "s_no": 99,
+    "product": "Dancing Butterfly",
+    "category": "Night Series",
+    "actual_price": 745,
+    "offer_price": 149,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 100,
+    "product": "Pamparam",
+    "category": "Night Series",
+    "actual_price": 745,
+    "offer_price": 149,
+    "quantity": "1 Box - 10 Pieces"
+  },
+  {
+    "s_no": 101,
+    "product": "Helicopter",
+    "category": "Night Series",
+    "actual_price": 675,
+    "offer_price": 135,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 102,
+    "product": "3 1/2 Nayagara Falls (Red & Green)",
+    "category": "Night Series",
+    "actual_price": 2000,
+    "offer_price": 400,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 103,
+    "product": "Sky Shots",
+    "category": "Night Series",
+    "actual_price": 225,
+    "offer_price": 45,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 104,
+    "product": "7 Peacock Shots",
+    "category": "Night Series",
+    "actual_price": 875,
+    "offer_price": 175,
+    "quantity": "1 Box - 5 Piece"
+  },
+  {
+    "s_no": 105,
+    "product": "Planet Wheeling Show (Crackling) 2 Pcs",
+    "category": "Night Series",
+    "actual_price": 1770,
+    "offer_price": 354,
+    "quantity": "1 Box- 2 Pieces"
+  },
+  {
+    "s_no": 106,
+    "product": "Motu Patlu (2 Pcs)",
+    "category": "Night Series",
+    "actual_price": 2205,
+    "offer_price": 441,
+    "quantity": "1 Box- 2 Pieces"
+  },
+  {
+    "s_no": 107,
+    "product": "Wizz Chakkar(2 Pcs)",
+    "category": "Night Series",
+    "actual_price": 1060,
+    "offer_price": 212,
+    "quantity": "1 Box- 2 Pieces"
+  },
+  {
+    "s_no": 108,
+    "product": "4X4 Wheel / Trend Wheel (5 Pcs)",
+    "category": "Night Series",
+    "actual_price": 1295,
+    "offer_price": 259,
+    "quantity": "1 Box- 5 Pieces"
+  },
+  {
+    "s_no": 109,
+    "product": "Shin Chan / Mogli (5 Pcs)",
+    "category": "Night Series",
+    "actual_price": 840,
+    "offer_price": 162,
+    "quantity": "1 Box- 5 Pieces"
+  },
+  {
+    "s_no": 110,
+    "product": "Chotta Fancy",
+    "category": "Night Series",
+    "actual_price": 225,
+    "offer_price": 45,
+    "quantity": "1 Box- 1 Pieces"
+  },
+  {
+    "s_no": 111,
+    "product": "Photo Flash",
+    "category": "Night Series",
+    "actual_price": 395,
+    "offer_price": 79,
+    "quantity": "1 Box- 5 Pieces"
+  },
+  {
+    "s_no": 112,
+    "product": "Selfie Stick",
+    "category": "Night Series",
+    "actual_price": 845,
+    "offer_price": 169,
+    "quantity": "1 Box- 5 Pieces"
+  },
+  {
+    "s_no": 113,
+    "product": "Drone",
+    "category": "Night Series",
+    "actual_price": 950,
+    "offer_price": 190,
+    "quantity": "1 Box- 5 Pieces"
+  },
+  {
+    "s_no": 114,
+    "product": "Tin Beer - Fountain",
+    "category": "Night Series",
+    "actual_price": 450,
+    "offer_price": 90,
+    "quantity": "1 Tin"
+  },
+  {
+    "s_no": 115,
+    "product": "25 Shot Colour & Tails",
+    "category": "Multishot items",
+    "actual_price": 328,
+    "offer_price": 350,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 116,
+    "product": "30 Shot - Economic",
+    "category": "Multishot items",
+    "actual_price": 2400,
+    "offer_price": 420,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 117,
+    "product": "30 Shot Colour & Crackling",
+    "category": "Multishot items",
+    "actual_price": 2400,
+    "offer_price": 480,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 118,
+    "product": "60 Shot Colour & Crackling",
+    "category": "Multishot items",
+    "actual_price": 4800,
+    "offer_price": 960,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 119,
+    "product": "120 Shot Colour & Crackling",
+    "category": "Multishot items",
+    "actual_price": 9600,
+    "offer_price": 1920,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 120,
+    "product": "240 Shot Color And Crackling",
+    "category": "Multishot items",
+    "actual_price": 17500,
+    "offer_price": 3500,
+    "quantity": "1 Box - 1 Piece"
+  },
+  {
+    "s_no": 121,
+    "product": "Hunter 007 Gun (5 Pcs)",
+    "category": "Toys Fireworks",
+    "actual_price": 1850,
+    "offer_price": 270,
+    "quantity": "1 Box - 5 Pieces"
+  },
+  {
+    "s_no": 122,
+    "product": "Assorted Cartoon",
+    "category": "Toys Fireworks",
+    "actual_price": 240,
+    "offer_price": 42,
+    "quantity": "1 Box - 10 Piece"
+  },
+  {
+    "s_no": 123,
+    "product": "Emu Egg (2 Pcs)",
+    "category": "Toys Fireworks",
+    "actual_price": 1440,
+    "offer_price": 288,
+    "quantity": "1 Box- 2 Pieces"
+  },
+  {
+    "s_no": 124,
+    "product": "Rollcap",
+    "category": "Toys Fireworks",
+    "actual_price": 450,
+    "offer_price": 90,
+    "quantity": "1 Box- 100 Pieces"
+  },
+  {
+    "s_no": 125,
+    "product": "Family Pack 2000",
+    "category": "Combo Pack",
+    "actual_price": 10000,
+    "offer_price": 2000,
+    "quantity": "1 Box"
+  },
+  {
+    "s_no": 126,
+    "product": "Family Pack 3000",
+    "category": "Combo Pack",
+    "actual_price": 15000,
+    "offer_price": 3000,
+    "quantity": "1 Box"
+  },
+  {
+    "s_no": 127,
+    "product": "Family Pack 5000",
+    "category": "Combo Pack",
+    "actual_price": 25000,
+    "offer_price": 5000,
+    "quantity": "1 Box"
+  },
+  {
+    "s_no": 128,
+    "product": "Family Pack 10000",
+    "category": "Combo Pack",
+    "actual_price": 50000,
+    "offer_price": 10000,
+    "quantity": "1 Box"
   }
 ]

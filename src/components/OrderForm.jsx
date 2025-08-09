@@ -13,17 +13,28 @@ const OrderForm = ({ onSubmit, cart, total, discount, final }) => {
     state: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e) =>
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (final < 3000) {
+      alert(
+        `Minimum order value is ₹3000. Your order total is ₹${final.toFixed(
+          2
+        )}.`
+      );
+      return;
+    }
     onSubmit(formValues);
   };
 
   const downloadPDF = () => {
-    if (cart.length === 0) {
+    if (final < 3000) {
+      alert("Minimum order value is ₹3000 to download estimate.");
+      return;
+    }
+    if (!cart || cart.length === 0) {
       alert("Cart is empty.");
       return;
     }
@@ -37,22 +48,28 @@ const OrderForm = ({ onSubmit, cart, total, discount, final }) => {
     doc.text(`Phone: ${formValues.phone}`, 14, 32);
     doc.text(`Address: ${formValues.address}`, 14, 39);
 
+    const body = cart.map((item, i) => [
+      i + 1,
+      item.product ?? item.name ?? "",
+      `₹${(Number(item.price) || 0).toFixed(2)}`,
+      item.quantity,
+      `₹${((Number(item.price) || 0) * (item.quantity || 0)).toFixed(2)}`,
+    ]);
+
     doc.autoTable({
       startY: 45,
       head: [["S.No", "Product", "Price", "Qty", "Amount"]],
-      body: cart.map((item, i) => [
-        i + 1,
-        item.name,
-        `₹${item.price}`,
-        item.quantity,
-        `₹${item.price * item.quantity}`,
-      ]),
+      body,
     });
 
     const y = doc.lastAutoTable.finalY + 10;
-    doc.text(`Total Products: ${cart.length}`, 14, y);
+    doc.text(
+      `Total Products: ${cart.reduce((s, it) => s + (it.quantity || 0), 0)}`,
+      14,
+      y
+    );
     doc.text(`Total Price: ₹${total.toFixed(2)}`, 14, y + 7);
-    doc.text(`Discount: ₹${discount.toFixed(2)}`, 14, y + 14);
+    doc.text(`Discount: - ₹${discount.toFixed(2)}`, 14, y + 14);
     doc.text(`Final Total: ₹${final.toFixed(2)}`, 14, y + 21);
 
     doc.text("Shop Address:", 14, y + 32);
@@ -69,6 +86,7 @@ const OrderForm = ({ onSubmit, cart, total, discount, final }) => {
         <h2 className="text-2xl mb-6 font-bold text-center text-[#1A3D63]">
           Place Your Details
         </h2>
+
         <form
           className="grid grid-cols-1 md:grid-cols-2 gap-4"
           onSubmit={handleSubmit}
@@ -129,20 +147,41 @@ const OrderForm = ({ onSubmit, cart, total, discount, final }) => {
             placeholder="State"
             required
           />
-          <div className="md:col-span-2 flex flex-col md:flex-row gap-4">
+
+          <div className="md:col-span-2 flex flex-col md:flex-row gap-4 items-center">
+            {/* Place Order Button */}
             <button
               type="submit"
-              className="w-full bg-[#1A3D63] text-white py-3 rounded hover:bg-[#12314f]"
+              className={`w-full py-3 rounded text-white ${
+                final >= 3000
+                  ? "bg-[#1A3D63] hover:bg-[#12314f]"
+                  : "bg-gray-400 cursor-not-allowed"
+              }`}
+              disabled={final < 3000}
             >
-              Place the Order
+              {final < 3000
+                ? `Need ₹${(3000 - final).toFixed(2)} more`
+                : "Place the Order"}
             </button>
+
+            {/* Download Estimate Button */}
             <button
               type="button"
               onClick={downloadPDF}
-              className="w-full bg-green-700 text-white py-3 rounded hover:bg-green-800"
+              className={`w-full py-3 rounded text-white ${
+                final >= 3000
+                  ? "bg-green-700 hover:bg-green-800"
+                  : "bg-gray-400 cursor-not-allowed"
+              }`}
+              disabled={final < 3000}
             >
               Download Estimate
             </button>
+          </div>
+
+          {/* Minimum Order Note */}
+          <div className="md:col-span-2 text-sm text-gray-500 mt-2">
+            * Minimum order value is ₹3000
           </div>
         </form>
       </div>

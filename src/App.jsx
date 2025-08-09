@@ -7,77 +7,114 @@ import WhatsAppSticky from "./components/WhatsAppSticky";
 import BackgroundFireworks from "./components/BackgroundFireworks";
 import crackersData from "./data/crackers.json";
 
+const toNumber = (v) => {
+  if (v == null) return 0;
+  const s = String(v).replace(/[^0-9.-]+/g, "");
+  const n = parseFloat(s);
+  return Number.isFinite(n) ? n : 0;
+};
+
 const App = () => {
   const [cart, setCart] = useState([]);
   const [formData, setFormData] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // fake preloader
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000);
+    const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 
+  // Add item to cart (normalize id & price)
   const handleAddToCart = (item) => {
-    const exist = cart.find((i) => i.id === item.id);
-    if (exist) {
-      setCart(
-        cart.map((i) =>
-          i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
-        )
+    const itemId = String(item.s_no ?? item.id);
+    setCart((prev) => {
+      const exist = prev.find((i) => i.id === itemId);
+      if (exist) {
+        return prev.map((i) =>
+          i.id === itemId ? { ...i, quantity: i.quantity + 1 } : i
+        );
+      }
+      const price = toNumber(
+        item.offer_price ??
+          item.offerPrice ??
+          item.price ??
+          item.actual_price ??
+          item.actualPrice
       );
-    } else {
-      setCart([...cart, { ...item, quantity: 1 }]);
-    }
+      const name = item.product ?? item.name ?? "";
+      const category = item.category ?? "Uncategorized";
+      return [
+        ...prev,
+        {
+          id: itemId,
+          s_no: item.s_no ?? null,
+          product: name,
+          price,
+          category,
+          quantity: 1,
+        },
+      ];
+    });
   };
 
+  // Update quantity (id should be same string we used when adding)
   const handleUpdateQuantity = (id, qty) => {
-    if (qty === 0) return setCart(cart.filter((i) => i.id !== id));
-    setCart(cart.map((i) => (i.id === id ? { ...i, quantity: qty } : i)));
+    const itemId = String(id);
+    setCart((prev) => {
+      if (qty <= 0) return prev.filter((i) => i.id !== itemId);
+      return prev.map((i) => (i.id === itemId ? { ...i, quantity: qty } : i));
+    });
   };
 
-  const total = cart.reduce((acc, cur) => acc + cur.quantity * cur.price, 0);
-  const discount = total * 0.5;
+  // totals (price MUST be normalized when added)
+  const total = cart.reduce(
+    (acc, cur) => acc + (Number(cur.price) || 0) * (cur.quantity || 0),
+    0
+  );
+  const discount = total * 0.8; // you had 50% discount
   const final = total - discount;
 
+  // Form submit (minimum order check)
   const handleFormSubmit = (data) => {
-    setFormData(data);
+    if (final < 3000) {
+      alert(
+        `Minimum order value is ₹3000. Your order total is ₹${final.toFixed(
+          2
+        )}.`
+      );
+      return;
+    }
+    // Place order logic here (send to API etc.)
+    setFormData({ ...data, cart, total, discount, final });
+    alert("Order placed successfully!");
+    // Optional: clear cart after placing order:
+    // setCart([]);
   };
 
   return (
     <>
       <div className="font-sans scroll-smooth">
-        {/* Preloader Animation */}
         <AnimatePresence>
           {loading && (
             <motion.div
               key="preloader"
               className="fixed inset-0 flex flex-col items-center justify-center bg-white z-50"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
             >
               <img
                 src="/Explosive animation.gif"
                 alt="Loading Animation"
                 className="w-[220px] sm:w-[280px] md:w-[320px] lg:w-[350px] object-contain"
-                style={{ imageRendering: "auto" }}
               />
-              <motion.h1
-                className="text-black text-xl mt-6 font-bold tracking-widest text-center"
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ delay: 0.2, duration: 0.5 }}
-              >
+              <motion.h1 className="text-black text-xl mt-6 font-bold tracking-widest text-center">
                 Lighting Up the Festive Mood...
               </motion.h1>
             </motion.div>
           )}
         </AnimatePresence>
 
-        {/* Main Content */}
         {!loading && (
           <>
-            {/* Header Banner with Fireworks */}
             <div className="relative w-full h-[300px] overflow-hidden flex items-center justify-center bg-[#1e2f3f]">
               <BackgroundFireworks />
               <motion.h1
@@ -88,30 +125,26 @@ const App = () => {
                 PRITHIVIK CRACKERS
               </motion.h1>
             </div>
-            {/* Minimum Purchase Banner */}
+
             <motion.img
               src="/purchace_banner.png"
               alt="Minimum Purchase ₹3,000"
               className="absolute top-60 right-48 w-48 z-[9999] pointer-events-none"
               initial={{ y: 0 }}
               animate={{ y: [0, -10, 0] }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             />
-            {/* Price List Button */}
+
             <div className="flex justify-end my-4 px-4">
-              <button
-                type="button"
+              <a
+                href="/src/Soundwave Crackers - Price List 2025.pdf"
+                download
                 className="bg-[#DCEAF5] text-[#1A3D63] font-semibold px-5 py-3 rounded shadow hover:bg-[#c9dfef] transition-all duration-300"
               >
                 Download Price List
-              </button>
+              </a>
             </div>
 
-            {/* Crackers Table */}
             <div className="px-4 mb-10">
               <CrackersTable
                 data={crackersData}
@@ -122,34 +155,34 @@ const App = () => {
             </div>
 
             {/* Order Summary */}
-            {cart.length > 0 && (
-              <motion.div
-                className="mb-10 p-6 bg-[#EDF4FA] rounded-lg shadow-lg mx-4"
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-              >
-                <h2 className="text-2xl font-semibold text-[#0A1931] mb-4">
-                  Order Summary
-                </h2>
-                <div className="space-y-2 text-gray-800 font-ovo text-lg">
-                  <p className="flex justify-between border-b pb-1">
-                    <span>Total Products:</span> <span>{cart.length}</span>
-                  </p>
-                  <p className="flex justify-between border-b pb-1">
-                    <span>Total Price:</span> <span>₹{total.toFixed(2)}</span>
-                  </p>
-                  <p className="flex justify-between border-b pb-1">
-                    <span>Discount (50%):</span>
-                    <span>- ₹{discount.toFixed(2)}</span>
-                  </p>
-                  <p className="flex justify-between font-bold text-xl text-[#1A3D63] pt-2">
-                    <span>Total:</span> <span>₹{final.toFixed(2)}</span>
-                  </p>
-                </div>
-              </motion.div>
-            )}
+            <div className="mb-10 p-6 bg-[#EDF4FA] rounded-lg shadow-lg mx-4">
+              <h2 className="text-2xl font-semibold text-[#0A1931] mb-4">
+                Order Summary
+              </h2>
+              <div className="space-y-2 text-gray-800 font-ovo text-lg">
+                <p className="flex justify-between border-b pb-1">
+                  <span>Total Products:</span>{" "}
+                  <span>{cart.reduce((s, i) => s + (i.quantity || 0), 0)}</span>
+                </p>
+                <p className="flex justify-between border-b pb-1">
+                  <span>Total Price:</span> <span>₹{total.toFixed(2)}</span>
+                </p>
+                <p className="flex justify-between border-b pb-1">
+                  <span>Discount (80%):</span>
+                  <span>- ₹{discount.toFixed(2)}</span>
+                </p>
+                <p className="flex justify-between font-bold text-xl text-[#1A3D63] pt-2">
+                  <span>Total:</span> <span>₹{final.toFixed(2)}</span>
+                </p>
+                <p className="text-sm text-gray-600 mt-2">
+                  Minimum order: ₹3000.{" "}
+                  {final < 3000
+                    ? `Add ₹${(3000 - final).toFixed(2)} more to place order.`
+                    : "You can place the order."}
+                </p>
+              </div>
+            </div>
 
-            {/* Order Form */}
             <div className="mb-10 px-4">
               <OrderForm
                 onSubmit={handleFormSubmit}
@@ -160,12 +193,10 @@ const App = () => {
               />
             </div>
 
-            {/* Contact Form */}
             <div className="mb-10 px-4">
               <ContactForm />
             </div>
 
-            {/* WhatsApp Sticky */}
             <WhatsAppSticky />
           </>
         )}
