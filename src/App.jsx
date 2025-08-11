@@ -4,8 +4,9 @@ import CrackersTable from "./components/CrackersTable";
 import ContactForm from "./components/ContactForm";
 import OrderForm from "./components/OrderForm";
 import WhatsAppSticky from "./components/WhatsAppSticky";
-import BackgroundFireworks from "./components/BackgroundFireworks";
+import BackgroundFireworks from "./components/FireworkCanvas";
 import crackersData from "./data/crackers.json";
+import Banner from "./components/Banner";
 
 const toNumber = (v) => {
   if (v == null) return 0;
@@ -72,7 +73,7 @@ const App = () => {
     (acc, cur) => acc + (Number(cur.price) || 0) * (cur.quantity || 0),
     0
   );
-  const discount = total * 0.8; // you had 50% discount
+  const discount = total * 0.0; // you had 50% discount
   const final = total - discount;
 
   // Form submit (minimum order check)
@@ -113,31 +114,13 @@ const App = () => {
           )}
         </AnimatePresence>
 
+        <Banner />
+
         {!loading && (
           <>
-            <div className="relative w-full h-[300px] overflow-hidden flex items-center justify-center bg-[#1e2f3f]">
-              <BackgroundFireworks />
-              <motion.h1
-                className="text-center text-white text-[12vw] sm:text-[8vw] md:text-[6vw] lg:text-[5vw] xl:text-[4vw] px-4 uppercase font-extrabold tracking-widest"
-                animate={{ scale: [1, 1.2, 1], rotate: [0, 5, -5, 0] }}
-                transition={{ repeat: Infinity, repeatDelay: 8, duration: 1.2 }}
-              >
-                PRITHIVIK CRACKERS
-              </motion.h1>
-            </div>
-
-            <motion.img
-              src="/purchace_banner.png"
-              alt="Minimum Purchase ₹3,000"
-              className="absolute top-60 right-48 w-48 z-[9999] pointer-events-none"
-              initial={{ y: 0 }}
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            />
-
             <div className="flex justify-end my-4 px-4">
               <a
-                href="/src/Soundwave Crackers - Price List 2025.pdf"
+                href="/public/Price_List_2025.pdf"
                 download
                 className="bg-[#DCEAF5] text-[#1A3D63] font-semibold px-5 py-3 rounded shadow hover:bg-[#c9dfef] transition-all duration-300"
               >
@@ -145,6 +128,14 @@ const App = () => {
               </a>
             </div>
 
+            <motion.img
+              src="/purchace_banner.png"
+              alt="Minimum Purchase ₹3,000"
+              className="absolute top-96 right-46 w-48 z-[9999] pointer-events-none"
+              initial={{ y: 0 }}
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            />
             <div className="px-4 mb-10">
               <CrackersTable
                 data={crackersData}
@@ -167,10 +158,10 @@ const App = () => {
                 <p className="flex justify-between border-b pb-1">
                   <span>Total Price:</span> <span>₹{total.toFixed(2)}</span>
                 </p>
-                <p className="flex justify-between border-b pb-1">
+                {/* <p className="flex justify-between border-b pb-1">
                   <span>Discount (80%):</span>
                   <span>- ₹{discount.toFixed(2)}</span>
-                </p>
+                </p> */}
                 <p className="flex justify-between font-bold text-xl text-[#1A3D63] pt-2">
                   <span>Total:</span> <span>₹{final.toFixed(2)}</span>
                 </p>
@@ -188,7 +179,7 @@ const App = () => {
                 onSubmit={handleFormSubmit}
                 cart={cart}
                 total={total}
-                discount={discount}
+                // discount={discount}
                 final={final}
               />
             </div>

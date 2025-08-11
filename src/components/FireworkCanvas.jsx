@@ -56,7 +56,10 @@ const FireworkCanvas = () => {
 
     Firework.prototype.draw = function () {
       ctx.beginPath();
-      ctx.moveTo(this.coordinates[this.coordinates.length - 1][0], this.coordinates[this.coordinates.length - 1][1]);
+      ctx.moveTo(
+        this.coordinates[this.coordinates.length - 1][0],
+        this.coordinates[this.coordinates.length - 1][1]
+      );
       ctx.lineTo(this.x, this.y);
       ctx.strokeStyle = `hsl(${hue}, 100%, ${this.brightness}%)`;
       ctx.stroke();
@@ -87,7 +90,10 @@ const FireworkCanvas = () => {
 
     Particle.prototype.draw = function () {
       ctx.beginPath();
-      ctx.moveTo(this.coordinates[this.coordinates.length - 1][0], this.coordinates[this.coordinates.length - 1][1]);
+      ctx.moveTo(
+        this.coordinates[this.coordinates.length - 1][0],
+        this.coordinates[this.coordinates.length - 1][1]
+      );
       ctx.lineTo(this.x, this.y);
       ctx.strokeStyle = `hsla(${this.hue}, 100%, 60%, ${this.alpha})`;
       ctx.stroke();
@@ -107,20 +113,22 @@ const FireworkCanvas = () => {
       ctx.globalCompositeOperation = "lighter";
 
       if (Math.random() < 0.03) {
-        fireworks.push(new Firework(
-          random(cw * 0.2, cw * 0.8),
-          ch,
-          random(cw * 0.2, cw * 0.8),
-          random(50, ch * 0.6)
-        ));
+        fireworks.push(
+          new Firework(
+            random(cw * 0.2, cw * 0.8),
+            ch,
+            random(cw * 0.2, cw * 0.8),
+            random(50, ch * 0.6)
+          )
+        );
       }
 
-      fireworks = fireworks.filter(firework => {
+      fireworks = fireworks.filter((firework) => {
         firework.draw();
         return !firework.update();
       });
 
-      particles = particles.filter(particle => {
+      particles = particles.filter((particle) => {
         particle.draw();
         return !particle.update();
       });
