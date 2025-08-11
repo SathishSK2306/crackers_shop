@@ -120,8 +120,8 @@ const App = () => {
           <>
             <div className="flex justify-end my-4 px-4">
               <a
-                href="/public/Price_List_2025.pdf"
-                download
+                href="/Prithivik_Crackers_Price_List_2025.pdf"
+                download="Prithivik_Crackers_Price_List_2025.pdf"
                 className="bg-[#DCEAF5] text-[#1A3D63] font-semibold px-5 py-3 rounded shadow hover:bg-[#c9dfef] transition-all duration-300"
               >
                 Download Price List
